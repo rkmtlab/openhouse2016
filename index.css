@@ -1,0 +1,32 @@
+body {
+	/*  IE8以下の代替の背景画像  */
+	background:url("a.jpg") #333;
+	background-attachment:fixed;
+	background-size:cover;
+	position:relative;
+	background: #000;
+}
+
+p {
+	font-family: serif;
+	color: #fff;
+	font-size: 400%;
+	margin: 50px;
+	position: relative;
+	z-index: 3;
+}
+
+video {
+	display:block;
+}
+
+#bg-video {
+	position:fixed;
+	right:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-1;
+}
