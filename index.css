@@ -10,11 +10,15 @@ body {
 p {
 	font-family: serif;
 	color: #fff;
-	font-size: 400%;
 	margin: 50px;
 	position: relative;
 	z-index: 3;
 }
+
+p#title {
+	font-size: 400%;
+}
+
 
 video {
 	display:block;
