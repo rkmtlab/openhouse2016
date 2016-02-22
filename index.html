@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Script-Type"  content= "text/javascript" />
     <meta http-equiv="Content-Style-Type"  content="text/css" />
 	<!-- <meta name="viewport" content="width=device-width"> -->
-    <title>ああ</title>
+    <title>test</title>
 	<link href="css/reset.css"  rel="stylesheet" type="text/css" />
 	<link href="css/chrome.css" rel="stylesheet" type="text/css" />
 	<link href="css/demo1.css"     rel="stylesheet" type="text/css" />
@@ -26,102 +26,78 @@
 
   </head>
   <body>
-	<video id="bg-video" autoplay loop muted>
-	  <source src="moff.mp4" type="video/mp4">
-		<source src="moff.webm" type="video/webm">
-		</video>
 
-		<p id="title">Brilliant Blue</p>
+	<!-- this is to make the page's vertical scrollbar appear the correct height -->
+	<div id="mock-scroller"></div>
+	<ul id="nav"></ul>
 
-		<!-- this is to make the page's vertical scrollbar appear the correct height -->
-		<div id="mock-scroller"></div>
-		<ul id="nav"></ul>
+	<div id="content">
 
-		<div id="content">
-		  <section id="story-header">
+	  <section id="story-header">
+		<div class="story">
+		  <div id="logo">
+			<video id="bg-video" autoplay loop muted>
+			  <source src="bg-video.mp4" type="video/mp4">
+				<source src="bg-video.webm" type="video/webm">
+				</video>
+
+				<!-- <img src="images/razorfish-logo.png" width="184" height="32"> -->
+			  </div>
+			  <p id="title">Brilliant Blue</p>
+			  <h2>First Pane</h2>
+			  <p>This is the first slide.  Nothing much to see, just pointing it out.</p>
+			  <p>Scroll Down</p>
+			</div>
+		  </section>
+
+		  <section id="story-intel" anim-pause="1000">
+			<img class="bg animate" src="images/intel-bg-01.jpg" anim-detached="true" />
 			<div class="story">
-			  <div id="logo">
-				<img src="images/razorfish-logo.png" width="184" height="32">
-				</div>
-
-				<h2>First Pane</h2>
-				<p>This is the first slide.  Nothing much to see, just pointing it out.</p>
-				<p>Scroll Down</p>
+			  <div>
+				<h2>メッセージ</h2>
+				<p>
+				  aaa
+				</p>
 			  </div>
-			</section>
+			</div>
+		  </section>
 
-
-			<section id="story-intel" anim-pause="1000">
-			  <img class="bg animate" src="images/intel-bg-01.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>Background parallax + Pause</h2>
-				  <p>
-					You'll notice that this page "locks" for a while.  This feature is optional and the pause length can be controlled.
-				  </p>
-				</div>
+		  <section id="story-william">
+			<img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
+			<div class="story">
+			  <div>
+				<h2>展示物</h2>
+				<p>
+				  ChamereonMask 
+				  Traxion
+				  JackIn Space
+				  CASPER
+				  JackIn Head
+				  MoveMe
+				  WithYou
+				</p>
 			  </div>
-			</section>
+			</div>
+		  </section>
 
-
-			<section id="story-william">
-			  <img class="bg animate" src="images/Intel_Will_bg.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>Background parallax</h2>
-				  <p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Quisque et urna lacus, quis aliquam purus. Nulla semper arcu vel diam auctor condimentum. Nam molestie sem eu quam fermentum a tempus nisi aliquet. Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce nec ipsum ac mauris imperdiet luctus sed vitae ligula. Phasellus nec hendrerit neque.
-				  </p>
-				</div>
+		  <section id="story-bing">
+			<img class="bg animate" src="images/bing-bg-01.jpg" anim-detached="true" />
+			<div class="story">
+			  <div>
+				<h2>aa</h2>
+				<p>
+				  aa
+				</p>
 			  </div>
-			</section>
+			</div>
+		  </section>
 
+		  <section id="story-foo" anim-pause="500">
+			<div class="story">
+			  <h2>アクセス</h2>
+			  <p>aaa</p>
+			</div>
+		  </section>
 
-			<section id="story-bing">
-			  <img class="bg animate" src="images/bing-bg-01.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>Background parallax</h2>
-				  <p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Quisque et urna lacus, quis aliquam purus. Nulla semper arcu vel diam auctor condimentum. Nam molestie sem eu quam fermentum a tempus nisi aliquet. Maecenas sit amet tincidunt elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce nec ipsum ac mauris imperdiet luctus sed vitae ligula. Phasellus nec hendrerit neque.
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-
-			<section id="story-foo" anim-pause="500">
-			  <div class="story">
-				<h2>Misc. Stuff</h2>
-				<p>Some more parallax stuff.</p>
-			  </div>
-			</section>
-
-
-		  </body>
-		</html>
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-		<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="ja" lang= "ja" dir="ltr">
-		  <head>
-			<meta http-equiv="Content-Type"  content= "text/html; charset=UTF-8" />
-			<meta http-equiv="Content-Script-Type"  content= "text/javascript" />
-			<meta http-equiv="Content-Style-Type"  content="text/css" />
-			<!-- <meta name="viewport" content="width=device-width"> -->
-			<title>ああ</title>
-			<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script> -->
-			<!-- <script type="text/javascript" src="index.js"></script> -->
-			<link rel="stylesheet" href="index.css">
-			</head>
-			<body>
-			  <video id="bg-video" autoplay loop muted>
-				<source src="bg-video.mp4" type="video/mp4">
-				  <source src="bg-video.webm" type="video/webm">
-				  </video>
-
-
-				  <p>Brilliant Blue</p>
-
-
-
-				</body>
-			  </html>
+		</body>
+	  </html>
