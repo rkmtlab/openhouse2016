@@ -21,6 +21,12 @@
       color: $white;
     }
 
+    & > .section-lead {
+      max-width: $width-section * 0.8;
+      margin: 32px auto;
+      color: white;
+    }
+
     & > .section-card {
       @include media($default-context) {
         @include outer-container;
