@@ -270,6 +270,10 @@ h3 {
       font-size: 36px;
       font-weight: normal;
       color: #fff; }
+    .section-top > .section-wrapper > .section-lead {
+      max-width: 768px;
+      margin: 32px auto;
+      color: white; }
     .section-top > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
@@ -322,6 +326,10 @@ h3 {
       font-size: 36px;
       font-weight: normal;
       color: #fff; }
+    .section-about > .section-wrapper > .section-lead {
+      max-width: 768px;
+      margin: 32px auto;
+      color: white; }
     .section-about > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
