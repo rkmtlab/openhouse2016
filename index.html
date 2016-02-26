@@ -1,160 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="ja" lang= "ja" dir="ltr">
-  <head>
-    <meta http-equiv="Content-Type"  content= "text/html; charset=UTF-8" />
-    <meta http-equiv="Content-Script-Type"  content= "text/javascript" />
-    <meta http-equiv="Content-Style-Type"  content="text/css" />
-	<!-- <meta name="viewport" content="width=device-width"> -->
-    <title>test</title>
-	<link href="css/reset.css"  rel="stylesheet" type="text/css" />
-	<link href="css/chrome.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="index.css"/>
-	<!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<![endif]-->
-    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script> -->
-    <!-- <script type="text/javascript" src="index.js"></script> -->
-
-	<script type="text/javascript" src="js/jquery-1.7.1.js"          ></script>
-	<script type="text/javascript" src="js/side-nav.js"              ></script>
-	<script type="text/javascript" src="js/backgrounds.js"           ></script>
-	<script type="text/javascript" src="js/kinetics.js"              ></script>
-
-	<!-- parallax.js really screws with the DOM, so make sure it's included last so other things don't notice :) -->
-	<script type="text/javascript" src="js/parallax.js"           ></script>
-
-  </head>
-  <body>
-
-	<!-- this is to make the page's vertical scrollbar appear the correct height -->
-	<div id="mock-scroller"></div>
-	<ul id="nav"></ul>
-
-	<div id="content">
-
-	  <div class="story">
-		<div id="logo">
-		  <video id="bg-video" autoplay loop muted>
-			<source src="bg-video.mp4" type="video/mp4">
-			  <source src="bg-video.webm" type="video/webm">
-			  </video>
-			</div>
-		  </div>
-
-		  <section id="story-header">
-			<div class="story">
-			  <h2>rekimoto lab. Open House 2015</h2>
-			</div>
-		  </section>
-
-		  <section id="story-intel" anim-pause="1000">
-			<!-- <img class="bg animate" src="img/cameleon.jpg" anim-detached="true" /> -->
-			<div class="story">
-			  <div>
-				<h2>メッセージ</h2>
-				<img src="./img/rekimotoport.jpg">
-				  <p>
-					平素よりお世話になっております、東京大学情報学環の暦本です。
-
-					2016年3月5日(土曜)に、東京大学情報学環 暦本研究室のオープンハウスを開催いたします。
-					お忙しい時期ですがご参加いただけますと幸いです。
-
-					暦本研究室では現在、人間やロボットそれぞれの能力を時間・空間の制約を超えて活用する、
-					Internet of Abilities(IoA)という考え方を提唱し、様々な研究を展開しております。
-					オープンハウスでは、この考えに基づいた暦本研究室の最新研究を中心に、各種研究を展示いたします。
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-william">
-			  <img class="bg animate" src="img/cameleon.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>展示物</h2>
-				  <p>
-					<ul>
-					  <li class="list">ChamereonMask</li>
-					  <li>Traxion</li>
-					  <li>JackIn Space</li>
-					  <li>CASPER</li>
-					  <li>JackIn Head</li>
-					  <li>MoveMe</li>
-					  <li>WithYou</li>
-					</ul>
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-bing">
-			  <img class="bg animate" src="img/cameleon.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>aa</h2>
-				  <p>
-					aa
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-bing">
-			  <img class="bg animate" src="img/jack_in_eye.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>aa</h2>
-				  <p>
-					aa
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-bing">
-			  <img class="bg animate" src="img/jack_in_head.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>aa</h2>
-				  <p>
-					aa
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-bing">
-			  <img class="bg animate" src="img/casper.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>aa</h2>
-				  <p>
-					aa
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-bing">
-			  <img class="bg animate" src="img/with_you.jpg" anim-detached="true" />
-			  <div class="story">
-				<div>
-				  <h2>aa</h2>
-				  <p>
-					aa
-				  </p>
-				</div>
-			  </div>
-			</section>
-
-			<section id="story-foo" anim-pause="500">
-			  <div class="story">
-				<h2>アクセス</h2>
-				<p>aaa</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.732237080719!2d139.76152118638075!3d35.70820626505997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzI5LjUiTiAxMznCsDQ1JzQ1LjYiRQ!5e0!3m2!1sja!2sjp!4v1456169208278" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			  </div>
-			</section>
-
-			<div id="cover"></div>
-		  </body>
-		</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rekimoto Lab. OpenHouse 2016</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./build/style.css">
+</head>
+<body>
+  <section class="section-top">
+    <div class="section-wrapper">
+      <header class="section-top-header">
+        <h1 class="title">
+          <small class="brand">Rekimoto Lab.</small>
+          OpenHouse 2016
+          <time class="date" datetime="">5 Mar. 2016 14:00 - 18.00</time>
+        </h1>
+      </header>
+      <nav class="section-top-buttons">
+        <a class="btn-registration" href="//docs.google.com/forms/d/1PDqAX2wGqPRQgKcfVRjFhg9n5hwnoEQu9SjHMEMBnMc/viewform">Registration</a>
+      </nav>
+    </div>
+  </section>
+  <section class="section-about">
+    <div class="section-wrapper">
+      <h2 class="section-title">About</h2>
+      <div class="section-card">
+        <div class="subsection-map">
+          <h3>地図</h3>
+          <iframe class="map" src="https://www.google.com/maps/d/embed?mid=zSs_ql0SZL58.kZztisoxUA1M" width="100%" height="420"></iframe>
+        </div>
+        <div class="subsection-outline">
+          <h3>概要</h3>
+          <dl>
+            <dt>開催日</dt>
+            <dd>2016年3月5日 14:00 - 18:00</dd>
+            <dt>会場1</dt>
+            <dd>スポーツ＆ライフテクノロジーラボ本郷スタジオ<br>（文京区本郷3-43-4下村ビルB1）</dd>
+            <dt>会場2</dt>
+            <dd>東京大学情報学環<br>ダイワユビキタス学術研究館</dd>
+            <dt>連絡先</dt>
+            <dd>rkmtlab+openhouse2016 at gmail.com<br>※ at を @ に置き換えてください</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="global-footer">
+    <p>&copy; <a href="//lab.rekimoto.org/">Rekimoto Lab.</a> 2016</p>
+  </footer>
+</body>
+</html>
