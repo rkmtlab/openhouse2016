@@ -1,0 +1,49 @@
+@mixin btn-base(
+  $color-btn-bg,
+  $color-btn-text,
+  $color-btn-caret: $primary,
+  $btn-height: 48px
+) {
+  position: relative;
+  display: inline-block;
+  color: $color-btn-text;
+  background-color: $color-btn-bg;
+  text-align: center;
+
+  height: $btn-height;
+  line-height: $btn-height;
+
+  padding-left: 48px;
+  padding-right: 48px;
+
+  border-radius: 8px;
+
+  &:after {
+    position: absolute;
+    height: $btn-height;
+    line-height: $btn-height;
+    color: $color-btn-caret;
+    right: 8px;
+
+    font-family: Fontawesome;
+    content: "\f101";
+  }
+}
+
+@mixin btn-block() {
+  display: block;
+  &:hover,
+  &:focus,
+  &:active {
+    display: block;
+  }
+}
+
+@mixin btn-default() {
+  @include btn-base($white, $gray);
+  &:hover,
+  &:focus,
+  &:active {
+    @include btn-base($primary, $white, $white);
+  }
+}

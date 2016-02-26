@@ -1,0 +1,10 @@
+$font-size-base:    16px;
+$font-size-large:   18px;
+$font-size-larger:  21px;
+$font-size-huge:    36px;
+
+$width-section-default: 960px;
+
+$screen-mobile:     500px;
+$default-context:   new-breakpoint(min-width $screen-mobile);
+$mobile-context:    new-breakpoint(max-width $screen-mobile);

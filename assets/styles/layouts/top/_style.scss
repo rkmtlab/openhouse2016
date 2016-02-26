@@ -1,0 +1,35 @@
+.btn-registration {
+  @include btn-default;
+}
+
+.section-top {
+  @include section;
+
+  .section-top-header {
+    color: $white;
+    margin-bottom: 80px;
+
+    & > .title {
+      font-size: $font-size-huge;
+
+      & > .brand {
+        display: block;
+        font-size: $font-size-larger;
+        font-weight: normal;
+        margin-bottom: 8px;
+        margin-left: 4px;
+      }
+
+      & > .date {
+        display: block;
+        font-size: $font-size-large;
+        font-weight: normal;
+        margin-top: 8px;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  & > .section-top-buttons {
+  }
+}

@@ -1,0 +1,26 @@
+@mixin global-footer {
+  padding: 16px 0;
+
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+
+  a {
+    &:link,
+    &:visited {
+      color: $white;
+      border-bottom: 1px dotted $white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      border-bottom-style: solid;
+    }
+  }
+}
+
+.global-footer {
+  @include global-footer;
+}

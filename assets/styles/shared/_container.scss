@@ -1,0 +1,38 @@
+@mixin section(
+  $width-section: $width-section-default
+) {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+  & > .section-wrapper {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    & > .section-title {
+      display: inline-block;
+      padding: 8px 32px;
+      border-bottom: 1px solid $white;
+      font-size: $font-size-huge;
+      font-weight: normal;
+      color: $white;
+    }
+
+    & > .section-card {
+      @include media($default-context) {
+        @include outer-container;
+      }
+      @include media($mobile-context) {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      @include pad;
+      background-color: $white;
+      text-align: left;
+    }
+  }
+}

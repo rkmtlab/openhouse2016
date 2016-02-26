@@ -1,0 +1,19 @@
+.section-about {
+  @include section;
+
+  .subsection-map,
+  .subsection-outline {
+    @include media($default-context) {
+      @include span-columns(6);
+    }
+    margin-bottom: 16px;
+  }
+
+  .subsection-map {
+
+    & > .map {
+      border: none;
+    }
+  }
+}
+
