@@ -1,0 +1,4 @@
+@mixin letter-spacing($space) {
+  letter-spacing: $space;
+  text-indent: $space;
+}

@@ -13,6 +13,7 @@
     text-align: center;
 
     & > .section-title {
+      @include letter-spacing(8px);
       display: inline-block;
       padding: 8px 32px;
       border-bottom: 1px solid $white;
@@ -22,9 +23,15 @@
     }
 
     & > .section-lead {
-      max-width: $width-section * 0.8;
+      @include letter-spacing(1px);
+      @include media($mobile-context) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      max-width: $width-section * 0.9;
       margin: 32px auto;
       color: white;
+      line-height: 2;
     }
 
     & > .section-card {

@@ -10,21 +10,24 @@
     margin-bottom: 80px;
 
     & > .title {
-      font-size: $font-size-huge;
+      @include letter-spacing(12px);
+      font-size: $font-size-title;
 
       & > .brand {
+        @include letter-spacing(8px);
         display: block;
         font-size: $font-size-larger;
         font-weight: normal;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         margin-left: 4px;
       }
 
       & > .date {
+        @include letter-spacing(4px);
         display: block;
         font-size: $font-size-large;
         font-weight: normal;
-        margin-top: 8px;
+        margin-top: 16px;
         margin-left: 4px;
       }
     }
