@@ -10,3 +10,13 @@ $width-section-default: 960px;
 $screen-mobile:     500px;
 $default-context:   new-breakpoint(min-width $screen-mobile);
 $mobile-context:    new-breakpoint(max-width $screen-mobile);
+
+$bg-img-ids:        "bg-cameleon-mask",
+                    "bg-casper",
+                    "bg-jackin-eye",
+                    "bg-jackin-eye2",
+                    "bg-jackin-head",
+                    "bg-jackin-space",
+                    "bg-move-me",
+                    "bg-squama",
+                    "bg-traxion";
