@@ -24,13 +24,12 @@
 
     & > .section-lead {
       @include letter-spacing(1px);
-      @include media($mobile-context) {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-      max-width: $width-section * 0.9;
+      max-width: $width-section;
+      padding-left: 8px;
+      padding-right: 8px;
       margin: 32px auto;
       color: white;
+      font-size: $font-size-small;
       line-height: 2;
     }
 
