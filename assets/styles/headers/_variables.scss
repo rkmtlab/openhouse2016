@@ -12,6 +12,7 @@ $default-context:   new-breakpoint(min-width $screen-mobile);
 $mobile-context:    new-breakpoint(max-width $screen-mobile);
 
 $bg-img-dir:        "../assets/images/projects";
+$bg-img-mobile-dir: "../assets/images/projects/mobile";
 $bg-img-ids:        "cameleon-mask",
                     "casper",
                     "jackin-eye",

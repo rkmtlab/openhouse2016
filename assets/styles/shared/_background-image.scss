@@ -46,7 +46,12 @@
       bottom: 0;
       min-width: 100%;
       min-height: 100%;
-      background: no-repeat center/cover url(#{$bg-img-dir}/#{$img-id}.png) fixed;
+      @include media($default-context) {
+        background: no-repeat center/cover url(#{$bg-img-dir}/#{$img-id}.png) fixed;
+      }
+      @include media($mobile-context) {
+        background: no-repeat center/cover url(#{$bg-img-mobile-dir}/#{$img-id}.png) fixed;
+      }
       animation: $animation-name $n * 5s ease-out infinite;
     }
   }
