@@ -49,8 +49,7 @@
       background: no-repeat center center;
       @include media($default-context) {
         background-image: url(#{$bg-img-dir}/#{$img-id}.png);
-        background-attachment: fixed;
-        background-size: cover;
+        background-size: 100% auto;
       }
       @include media($mobile-context) {
         background-image:  url(#{$bg-img-mobile-dir}/#{$img-id}.png);
