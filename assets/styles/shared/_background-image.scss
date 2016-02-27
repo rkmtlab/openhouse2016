@@ -37,7 +37,7 @@
       }
     }
 
-    ##{$img-id} {
+    #bg-#{$img-id} {
       z-index: −2;
       position: fixed;
       left: 0;
@@ -46,6 +46,7 @@
       bottom: 0;
       min-width: 100%;
       min-height: 100%;
+      background: no-repeat center/cover url(#{$bg-img-dir}/#{$img-id}.png) fixed;
       animation: $animation-name $n * 5s ease-out infinite;
     }
   }
