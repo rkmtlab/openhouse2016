@@ -264,6 +264,8 @@ h3 {
     vertical-align: middle;
     text-align: center; }
     .section-top > .section-wrapper > .section-title {
+      letter-spacing: 8px;
+      text-indent: 8px;
       display: inline-block;
       padding: 8px 32px;
       border-bottom: 1px solid #fff;
@@ -271,9 +273,16 @@ h3 {
       font-weight: normal;
       color: #fff; }
     .section-top > .section-wrapper > .section-lead {
-      max-width: 768px;
+      letter-spacing: 1px;
+      text-indent: 1px;
+      max-width: 864px;
       margin: 32px auto;
-      color: white; }
+      color: white;
+      line-height: 2; }
+      @media screen and (max-width: 500px) {
+        .section-top > .section-wrapper > .section-lead {
+          padding-left: 8px;
+          padding-right: 8px; } }
     .section-top > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
@@ -295,19 +304,73 @@ h3 {
     color: #fff;
     margin-bottom: 80px; }
     .section-top .section-top-header > .title {
-      font-size: 36px; }
+      letter-spacing: 12px;
+      text-indent: 12px;
+      font-size: 42px; }
       .section-top .section-top-header > .title > .brand {
+        letter-spacing: 8px;
+        text-indent: 8px;
         display: block;
         font-size: 21px;
         font-weight: normal;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         margin-left: 4px; }
       .section-top .section-top-header > .title > .date {
+        letter-spacing: 4px;
+        text-indent: 4px;
         display: block;
         font-size: 18px;
         font-weight: normal;
-        margin-top: 8px;
+        margin-top: 16px;
         margin-left: 4px; }
+
+.section-leads {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto; }
+  .section-leads > .section-wrapper {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    .section-leads > .section-wrapper > .section-title {
+      letter-spacing: 8px;
+      text-indent: 8px;
+      display: inline-block;
+      padding: 8px 32px;
+      border-bottom: 1px solid #fff;
+      font-size: 36px;
+      font-weight: normal;
+      color: #fff; }
+    .section-leads > .section-wrapper > .section-lead {
+      letter-spacing: 1px;
+      text-indent: 1px;
+      max-width: 864px;
+      margin: 32px auto;
+      color: white;
+      line-height: 2; }
+      @media screen and (max-width: 500px) {
+        .section-leads > .section-wrapper > .section-lead {
+          padding-left: 8px;
+          padding-right: 8px; } }
+    .section-leads > .section-wrapper > .section-card {
+      padding: 2.35765%;
+      background-color: #fff;
+      text-align: left; }
+      @media screen and (min-width: 500px) {
+        .section-leads > .section-wrapper > .section-card {
+          max-width: 68em;
+          margin-left: auto;
+          margin-right: auto; }
+          .section-leads > .section-wrapper > .section-card::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (max-width: 500px) {
+        .section-leads > .section-wrapper > .section-card {
+          margin-left: 16px;
+          margin-right: 16px; } }
 
 .section-about {
   display: table;
@@ -320,6 +383,8 @@ h3 {
     vertical-align: middle;
     text-align: center; }
     .section-about > .section-wrapper > .section-title {
+      letter-spacing: 8px;
+      text-indent: 8px;
       display: inline-block;
       padding: 8px 32px;
       border-bottom: 1px solid #fff;
@@ -327,9 +392,16 @@ h3 {
       font-weight: normal;
       color: #fff; }
     .section-about > .section-wrapper > .section-lead {
-      max-width: 768px;
+      letter-spacing: 1px;
+      text-indent: 1px;
+      max-width: 864px;
       margin: 32px auto;
-      color: white; }
+      color: white;
+      line-height: 2; }
+      @media screen and (max-width: 500px) {
+        .section-about > .section-wrapper > .section-lead {
+          padding-left: 8px;
+          padding-right: 8px; } }
     .section-about > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
