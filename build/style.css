@@ -275,14 +275,13 @@ h3 {
     .section-top > .section-wrapper > .section-lead {
       letter-spacing: 1px;
       text-indent: 1px;
-      max-width: 864px;
+      max-width: 960px;
+      padding-left: 8px;
+      padding-right: 8px;
       margin: 32px auto;
       color: white;
+      font-size: 14px;
       line-height: 2; }
-      @media screen and (max-width: 500px) {
-        .section-top > .section-wrapper > .section-lead {
-          padding-left: 8px;
-          padding-right: 8px; } }
     .section-top > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
@@ -346,14 +345,13 @@ h3 {
     .section-leads > .section-wrapper > .section-lead {
       letter-spacing: 1px;
       text-indent: 1px;
-      max-width: 864px;
+      max-width: 960px;
+      padding-left: 8px;
+      padding-right: 8px;
       margin: 32px auto;
       color: white;
+      font-size: 14px;
       line-height: 2; }
-      @media screen and (max-width: 500px) {
-        .section-leads > .section-wrapper > .section-lead {
-          padding-left: 8px;
-          padding-right: 8px; } }
     .section-leads > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
@@ -394,14 +392,13 @@ h3 {
     .section-about > .section-wrapper > .section-lead {
       letter-spacing: 1px;
       text-indent: 1px;
-      max-width: 864px;
+      max-width: 960px;
+      padding-left: 8px;
+      padding-right: 8px;
       margin: 32px auto;
       color: white;
+      font-size: 14px;
       line-height: 2; }
-      @media screen and (max-width: 500px) {
-        .section-about > .section-wrapper > .section-lead {
-          padding-left: 8px;
-          padding-right: 8px; } }
     .section-about > .section-wrapper > .section-card {
       padding: 2.35765%;
       background-color: #fff;
