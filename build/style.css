@@ -1,3 +1,4 @@
+@charset "UTF-8";
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #1565c0;
@@ -177,7 +178,284 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@keyframes animation-cameleon-mask {
+  0% {
+    opacity: 1; }
+  11.11111% {
+    opacity: 0; }
+  88.88889% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.bg-container #bg-cameleon-mask {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-cameleon-mask 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-cameleon-mask {
+      background-image: url(../assets/images/projects/cameleon-mask.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-cameleon-mask {
+      background-image: url(../assets/images/projects/mobile/cameleon-mask.png);
+      background-size: auto 100%; } }
+@keyframes animation-casper {
+  0% {
+    opacity: 0; }
+  0% {
+    opacity: 0; }
+  11.11111% {
+    opacity: 1; }
+  22.22222% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-casper {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-casper 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-casper {
+      background-image: url(../assets/images/projects/casper.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-casper {
+      background-image: url(../assets/images/projects/mobile/casper.png);
+      background-size: auto 100%; } }
+@keyframes animation-jackin-eye {
+  0% {
+    opacity: 0; }
+  11.11111% {
+    opacity: 0; }
+  22.22222% {
+    opacity: 1; }
+  33.33333% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-jackin-eye {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-jackin-eye 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-jackin-eye {
+      background-image: url(../assets/images/projects/jackin-eye.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-jackin-eye {
+      background-image: url(../assets/images/projects/mobile/jackin-eye.png);
+      background-size: auto 100%; } }
+@keyframes animation-jackin-eye2 {
+  0% {
+    opacity: 0; }
+  22.22222% {
+    opacity: 0; }
+  33.33333% {
+    opacity: 1; }
+  44.44444% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-jackin-eye2 {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-jackin-eye2 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-jackin-eye2 {
+      background-image: url(../assets/images/projects/jackin-eye2.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-jackin-eye2 {
+      background-image: url(../assets/images/projects/mobile/jackin-eye2.png);
+      background-size: auto 100%; } }
+@keyframes animation-jackin-head {
+  0% {
+    opacity: 0; }
+  33.33333% {
+    opacity: 0; }
+  44.44444% {
+    opacity: 1; }
+  55.55556% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-jackin-head {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-jackin-head 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-jackin-head {
+      background-image: url(../assets/images/projects/jackin-head.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-jackin-head {
+      background-image: url(../assets/images/projects/mobile/jackin-head.png);
+      background-size: auto 100%; } }
+@keyframes animation-jackin-space {
+  0% {
+    opacity: 0; }
+  44.44444% {
+    opacity: 0; }
+  55.55556% {
+    opacity: 1; }
+  66.66667% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-jackin-space {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-jackin-space 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-jackin-space {
+      background-image: url(../assets/images/projects/jackin-space.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-jackin-space {
+      background-image: url(../assets/images/projects/mobile/jackin-space.png);
+      background-size: auto 100%; } }
+@keyframes animation-move-me {
+  0% {
+    opacity: 0; }
+  55.55556% {
+    opacity: 0; }
+  66.66667% {
+    opacity: 1; }
+  77.77778% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-move-me {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-move-me 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-move-me {
+      background-image: url(../assets/images/projects/move-me.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-move-me {
+      background-image: url(../assets/images/projects/mobile/move-me.png);
+      background-size: auto 100%; } }
+@keyframes animation-squama {
+  0% {
+    opacity: 0; }
+  66.66667% {
+    opacity: 0; }
+  77.77778% {
+    opacity: 1; }
+  88.88889% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-squama {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-squama 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-squama {
+      background-image: url(../assets/images/projects/squama.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-squama {
+      background-image: url(../assets/images/projects/mobile/squama.png);
+      background-size: auto 100%; } }
+@keyframes animation-traxion {
+  0% {
+    opacity: 0; }
+  77.77778% {
+    opacity: 0; }
+  88.88889% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.bg-container #bg-traxion {
+  z-index: −2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: no-repeat center center;
+  animation: animation-traxion 45s ease-out infinite; }
+  @media screen and (min-width: 500px) {
+    .bg-container #bg-traxion {
+      background-image: url(../assets/images/projects/traxion.png);
+      background-size: 100% auto; } }
+  @media screen and (max-width: 500px) {
+    .bg-container #bg-traxion {
+      background-image: url(../assets/images/projects/mobile/traxion.png);
+      background-size: auto 100%; } }
+.bg-container .bg-shade {
+  position: fixed;
+  z-index: −1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+
 .global-footer {
+  position: relative;
+  z-index: 10;
   padding: 16px 0;
   color: #fff;
   text-align: center;
@@ -194,13 +472,8 @@ body {
   font-size: 16px;
   min-height: 100%;
   margin: 0;
-  padding: 0; }
-
-html {
-  background: no-repeat center/cover url(../assets/images/bg0.png) fixed; }
-
-body {
-  background-color: rgba(0, 0, 0, 0.4); }
+  padding: 0;
+  background-color: black; }
 
 h1 {
   font-size: 36px;
@@ -254,10 +527,12 @@ h3 {
       content: "\f101"; }
 
 .section-top {
+  position: relative;
   display: table;
   width: 100%;
   height: 100vh;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 10; }
   .section-top > .section-wrapper {
     width: 100%;
     display: table-cell;
@@ -324,10 +599,12 @@ h3 {
         margin-left: 4px; }
 
 .section-leads {
+  position: relative;
   display: table;
   width: 100%;
   height: 100vh;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 10; }
   .section-leads > .section-wrapper {
     width: 100%;
     display: table-cell;
@@ -371,10 +648,12 @@ h3 {
           margin-right: 16px; } }
 
 .section-about {
+  position: relative;
   display: table;
   width: 100%;
   height: 100vh;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 10; }
   .section-about > .section-wrapper {
     width: 100%;
     display: table-cell;
