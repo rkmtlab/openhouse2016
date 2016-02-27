@@ -4,9 +4,11 @@
 
 @import "./headers/colors";
 @import "./headers/variables";
+@import "./headers/mixins";
 
 @import "./shared/**/*";
 @import "./components/**/*";
 
 @import "./layouts/top/style";
+@import "./layouts/leads/style";
 @import "./layouts/about/style";
